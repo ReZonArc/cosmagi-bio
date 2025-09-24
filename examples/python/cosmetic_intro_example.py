@@ -28,7 +28,7 @@ def initialize_cosmetic_atomspace():
     
     # Load bioscience types including cosmetic chemistry extensions
     try:
-        from opencog.bioscience import *
+        import opencog.bioscience
         print("✓ Bioscience module loaded successfully")
     except ImportError:
         print("⚠ Warning: Bioscience module not available")

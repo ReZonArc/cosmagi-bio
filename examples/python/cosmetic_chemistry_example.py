@@ -632,7 +632,7 @@ def main():
     initialize_opencog(atomspace)
     
     try:
-        from opencog.bioscience import *
+        import opencog.bioscience
         print("✓ Bioscience module loaded successfully")
     except ImportError:
         print("⚠ Warning: Using standard atom types for demonstration")
