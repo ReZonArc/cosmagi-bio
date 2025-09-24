@@ -3,3 +3,22 @@ moses-scripts/.Rhistory
 relationship-mining/.Rhistory
 
 .idea/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Temporary files
+/tmp/
+*.tmp
+*.temp
+
+# IDE files
+.vscode/
+*.swp
+*.swo
+*~
