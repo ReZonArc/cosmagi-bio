@@ -68,3 +68,77 @@ QUANTITATIVE_PREDICATE_LINK <- ORDERED_LINK
 SCHEMA_VALUE_RECORD_LINK <- ORDERED_LINK
 SCHEMA_VALUE_LIST_LINK <- LIST_LINK
 LAZY_EXECUTION_OUTPUT_LINK <- ORDERED_LINK
+
+// Cosmetic Chemistry Specializations
+// ===================================
+
+// Ingredient Categories
+// ---------------------
+// The ActiveIngredient type represents active compounds that provide the primary benefits in cosmetic formulations
+ACTIVE_INGREDIENT <- MOLECULE_NODE
+// The Preservative type represents antimicrobial agents that prevent spoilage and contamination
+PRESERVATIVE <- MOLECULE_NODE
+// The Emulsifier type represents compounds that enable mixing of oil and water phases
+EMULSIFIER <- MOLECULE_NODE
+// The Humectant type represents moisture-attracting and retaining compounds
+HUMECTANT <- MOLECULE_NODE
+// The Surfactant type represents surface-active agents for cleansing and foaming
+SURFACTANT <- MOLECULE_NODE
+// The Thickener type represents viscosity-modifying compounds
+THICKENER <- MOLECULE_NODE
+// The Emollient type represents skin-softening and conditioning agents
+EMOLLIENT <- MOLECULE_NODE
+// The Antioxidant type represents compounds that prevent oxidative degradation
+ANTIOXIDANT <- MOLECULE_NODE
+// The UvFilter type represents UV-blocking compounds for sun protection
+UV_FILTER <- MOLECULE_NODE
+// The Fragrance type represents scent-providing compounds
+FRAGRANCE <- MOLECULE_NODE
+// The Colorant type represents pigments and dyes for color effects
+COLORANT <- MOLECULE_NODE
+// The PhAdjuster type represents pH-modifying compounds
+PH_ADJUSTER <- MOLECULE_NODE
+
+// Formulation Types
+// ----------------
+// The SkincareFormulation type represents complete skincare product formulations
+SKINCARE_FORMULATION <- CONCEPT_NODE
+// The HaircareFormulation type represents complete haircare product formulations
+HAIRCARE_FORMULATION <- CONCEPT_NODE
+// The MakeupFormulation type represents complete makeup product formulations
+MAKEUP_FORMULATION <- CONCEPT_NODE
+// The FragranceFormulation type represents complete fragrance product formulations
+FRAGRANCE_FORMULATION <- CONCEPT_NODE
+
+// Property Types
+// -------------
+// The PhProperty type represents pH characteristics of formulations
+PH_PROPERTY <- CONCEPT_NODE
+// The ViscosityProperty type represents flow and texture characteristics
+VISCOSITY_PROPERTY <- CONCEPT_NODE
+// The StabilityProperty type represents formulation stability characteristics
+STABILITY_PROPERTY <- CONCEPT_NODE
+// The TextureProperty type represents sensory and feel characteristics
+TEXTURE_PROPERTY <- CONCEPT_NODE
+// The SpfProperty type represents sun protection factor characteristics
+SPF_PROPERTY <- CONCEPT_NODE
+
+// Interaction Types
+// ----------------
+// The CompatibilityLink type represents positive ingredient interactions
+COMPATIBILITY_LINK <- LINK
+// The IncompatibilityLink type represents negative ingredient interactions
+INCOMPATIBILITY_LINK <- LINK
+// The SynergyLink type represents beneficial ingredient interactions
+SYNERGY_LINK <- LINK
+// The AntagonismLink type represents counteractive ingredient interactions
+ANTAGONISM_LINK <- LINK
+
+// Safety and Regulatory
+// --------------------
+// The SafetyAssessment type represents safety evaluation data
+SAFETY_ASSESSMENT <- CONCEPT_NODE
+// The AllergenClassification type represents allergenicity classifications
+ALLERGEN_CLASSIFICATION <- CONCEPT_NODE
+// The ConcentrationLimit type represents maximum allowed concentrations
+CONCENTRATION_LIMIT <- CONCEPT_NODE
